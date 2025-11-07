@@ -1,12 +1,9 @@
 # reports.py
 # Merged reporting + at-risk functionality
-# Produces:
+
 #  - summary_report()         -> prints summary to terminal (default reads "ano.csv")
 #  - export_per_section()     -> writes one CSV per section (into 'reports/' by default)
 #  - export_at_risk()         -> writes at-risk CSV and prints the list (default threshold 75.0)
-#
-# This module is defensive: handles missing numeric fields (None/""/"None") and will not crash on malformed rows.
-# Type hints included.
 
 from typing import List, Dict, Tuple, Optional
 import csv
