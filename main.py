@@ -4,7 +4,7 @@ import statistics
 import analytics  # your existing weighted.py module
 import array_operations # select, project, sort, insert, delete
 from ingest import clean_ingest # read csv file and validate rows
-import reportz
+import reports
 
 
 
@@ -100,9 +100,9 @@ def menu():
                 elif sub == "e":
                     analytics.improvement()
                 elif sub == "f":
-                    reportz.summary_report()
+                    reports.summary_report()
                 elif sub == "g":
-                    reportz.export_at_risk()
+                    reports.export_at_risk()
                 elif sub == "h":
                     break
                 else:
@@ -110,7 +110,7 @@ def menu():
 
         elif choice == "8":  
             section = input("Enter section name (pi,A,AE): ")
-            reportz.display_section_simple(section)
+            reports.display_section_simple(section)
 
         elif choice == "9":  
             print("Exiting program...")
